@@ -1,0 +1,138 @@
+main{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ------------------------------------------------------ */
+
+.create{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: space-between;
+}
+.todo{
+    font-size: 17px;
+    border: 1px solid #e3d7c7;
+    background-color: #e3d7c7;
+    outline-color: #595647;
+    width: 700px; height: 60px;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.date{
+    font-size: 17px;
+    font-weight: 600;
+    border: 1px solid #e3d7c7;
+    background-color: #e3d7c7;
+    outline-color: #595647;
+    width: 350px; height: 60px;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+.create>button{
+    width: 90px; height: 60px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #c0a37b;
+    border-color: #c0a37b;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgb(46, 45, 45);
+}
+
+/* ------------------------------------------------------ */
+
+.todoWrap>h3{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+    background-color: #c0a37b;
+    border-color: #c0a37b;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+.todoGoalList{
+    /* width: 800px; */
+    width: 100%;
+    border: 1px solid #5e5b3a;
+    border-radius: 10px;
+    padding: 15px;
+}
+.BotWrap{
+    border-top: 1px solid #595647;
+    margin: 50px 20px 20px 20px;
+}
+.count{
+    padding-top: 30px;
+    font-size: 20px;
+    text-align: end;
+}
+.count>span{
+    padding: 0 10px;
+}
+
+/* ------------------------------------------------------ */
+
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.listbox{
+    display: flex;
+    align-items: center;
+}
+.listbox>label{
+    display: inline-block;
+    width: 800px;
+    border-bottom: 1px dashed #5e5b3a;
+    padding: 10px 15px 15px 10px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.listbox>span{
+    width: 150px; height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: #e3d7c7;
+    border-radius: 10px;
+}
+.list>input[type='checkbox']{
+    width: 35px; height: 35px;
+    accent-color: #c0a37b;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.updatebox{
+    display: flex;
+    align-items: center;
+}
+.updatebox>input[type='text']{
+    width: 800px;
+    margin-right: 10px;
+    padding: 10px 15px 10px 10px;
+    border: none;
+    margin: 0 10px;
+    font-size: 18px;
+}
+.updatebox>input[type='date']{
+    width: 150px;
+    padding: 10px 15px 15px 10px;
+    border: none;
+    font-size: 12px;
+}
+
+.updel>button{
+    width: 40px; height: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px -5px rgba(46, 45, 45, 0.5);
+    background-color: #e3d7c7;
+    border-color: #e3d7c7;
+    padding-top: 3px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.updel img{
+    width: 25px;
+}
