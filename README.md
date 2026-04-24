@@ -5,7 +5,7 @@
 <img width="1277" height="900" alt="화면 캡처 2026-04-24 192646" src="https://github.com/user-attachments/assets/3a731faa-9d17-4473-a1d6-5b6a77b3812d" />
 
 ## 🔗 링크
-- **배포 링크**: [바로가기](https://to-do-list.vercel.app/)
+- **배포 링크**: [바로가기](https://to-do-list-one-blue-65.vercel.app/)
 
 <br/>
 
