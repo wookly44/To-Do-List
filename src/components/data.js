@@ -1,28 +1,28 @@
 const Contents = {
     inputs : {
-        userName: '',
-        number: ''
+        text: '',
+        isDone: false
     },
     datas : [{
         id: 1,
-        userName: '프론트엔드 과정 - html, css 연습하기',
-        number: '2024-05-26',
-        active: false
+        text: 'html, css 연습하기',
+        isDone: false
     },{
         id: 2,
-        userName: '오늘의 목표 한가지 정하기',
-        number: '2024-04-07',
-        active: false
+        text: '오늘의 목표 정리하기',
+        isDone: false
     },{
         id: 3,
-        userName: '리액트 프로젝트 완성하기',
-        number: '2018-05-24',
-        active: false
+        text: '리액트 프로젝트 완성하기',
+        isDone: false
     },{
         id: 4,
-        userName: '애니메이션 효과 공부하기',
-        number: '2020-04-19',
-        active: false
+        text: '애니메이션 효과 공부하기',
+        isDone: false
+    },{
+        id: 5,
+        text: 'Next.js 프로젝트 시작하기',
+        isDone: false
     }]
 }
 const Reducer = (state, action)=>{
@@ -47,8 +47,7 @@ const Reducer = (state, action)=>{
                 ...state,
                 datas: state.datas.map((data)=>data.id == action.id?
                     {...data,
-                    userName: action.userName,
-                    number: action.number
+                    text: action.text
                     }:data)
             }
         case 'click':
@@ -56,7 +55,7 @@ const Reducer = (state, action)=>{
                 ...state,
                 datas: state.datas.map((data)=>data.id == action.id?
                     {...data,
-                    active : action.active
+                    isDone : !data.isDone
                     }:data)
             }
         default : 
@@ -64,4 +63,3 @@ const Reducer = (state, action)=>{
     }
 }
 export {Contents, Reducer}
-// 두개 내보낼때는 default 빼고!
