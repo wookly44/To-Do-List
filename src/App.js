@@ -1,5 +1,4 @@
 import './App.css';
-import './components/main.css'
 import {useCallback, useReducer, useState, useRef, useMemo } from 'react';
 import {Contents, Reducer} from './components/data'
 import Lists from './components/lists';
