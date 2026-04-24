@@ -47,8 +47,6 @@ function App() {
     })
   }, []);
 
-  const count = datas.length;
-
   const [filterState, setFilterState] = useState('incomplete');
 
   function listChk(){

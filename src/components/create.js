@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 const Create = ({ createEvent }) => {
     
@@ -15,15 +15,13 @@ const Create = ({ createEvent }) => {
     }
 
     function createBtn(){
-        if(inputs.text == ''){
+        if(inputs.text === ''){
             alert('내용을 입력해 주세요')
         }else{
             createEvent(inputs.text)
             setInputs({text: ''})
         }
     }
-    const Creates = useRef()
-    
 
     return(
         <div className="createWrap">

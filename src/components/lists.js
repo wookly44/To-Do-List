@@ -54,13 +54,13 @@ const Lists = ({datas, deleteEvent, updateEvent, clickEvent})=>{
             }
             {onupdate?
                 <div className="btnBox">
-                    <button onClick={updateBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_edit.png`}/></button>
-                    <button onClick={onDeleteBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_delete.png`}/></button>  
+                    <button onClick={updateBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_edit.png`} alt='edit'/></button>
+                    <button onClick={onDeleteBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_delete.png`} alt='delete'/></button>  
                 </div>
                 :
                 <div className="btnBox">
-                    <button onClick={onSubmitBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_check.png`}/></button>  
-                    <button onClick={cancelBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_cancel.png`}/></button>
+                    <button onClick={onSubmitBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_check.png`} alt='check'/></button>  
+                    <button onClick={cancelBtn}><img src={`${process.env.PUBLIC_URL}/assets/i_cancel.png`} alt='cancel'/></button>
                 </div>
             }
         </li>

@@ -45,7 +45,7 @@ const Reducer = (state, action)=>{
         case 'update':
             return {
                 ...state,
-                datas: state.datas.map((data)=>data.id == action.id?
+                datas: state.datas.map((data)=>data.id === action.id?
                     {...data,
                     text: action.text
                     }:data)
@@ -53,7 +53,7 @@ const Reducer = (state, action)=>{
         case 'click':
             return {
                 ...state,
-                datas: state.datas.map((data)=>data.id == action.id?
+                datas: state.datas.map((data)=>data.id === action.id?
                     {...data,
                     isDone : !data.isDone
                     }:data)
